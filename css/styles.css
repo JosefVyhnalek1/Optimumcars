@@ -434,6 +434,12 @@ a {
     justify-content: space-around;
 }
 
+@media (max-width: 990px) {
+    .hide-on-mobile{
+        display: none;
+    }
+}
+
 .instagram-section{
     margin: 100px 0;
 }
