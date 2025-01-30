@@ -217,6 +217,20 @@ a {
     .top-bar {
         padding: 3px 10px;
     }
+
+    .hero-section-text-box{
+        margin: 30px;
+    }
+
+    .stats{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 48px;
+    }
 }
 
 .about-section {
@@ -262,11 +276,21 @@ a {
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin: 30px;
+        gap: 20px;
+    }
+
+    .offer-section{
+        padding: 30px !important;
     }
 
     .offer-section-box1{
         flex-direction: column !important;
         gap: 30px;
+        text-align: center;
+    }
+
+    .offer-section-box3{
         text-align: center;
     }
 }
@@ -362,6 +386,23 @@ a {
     letter-spacing: -0.02em;
     color: #000;
     border-bottom: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .showroom-section{
+        text-align: center;
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .showroom-section-box3{
+        margin-bottom: 0;
+    }
+
+    .showroom-section-box1{
+        margin-top: 20px;
+    }
 }
 
 .brand-section{
