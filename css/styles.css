@@ -522,3 +522,23 @@ a {
     gap: 20px;
     width: fit-content;
 }
+
+@media (max-width: 990px) {
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-item *{
+        align-self: center;
+    }
+
+    .grid-parent{
+        gap: 30px;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
+}
