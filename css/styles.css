@@ -227,7 +227,6 @@ a {
 }
 
 .about-section-text {
-    font-family: Halvar Breitschrift;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -256,6 +255,20 @@ a {
     text-transform: uppercase;
     border: none;
     border-bottom: 2px solid #000;
+}
+
+@media (max-width: 990px) {
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offer-section-box1{
+        flex-direction: column !important;
+        gap: 30px;
+        text-align: center;
+    }
 }
 
 .offer-section{
