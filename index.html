@@ -172,39 +172,39 @@ Vaši poptávku.</span>
         <span class="instagram-section-text">sledujte nás na instagramu</span>
         </div>
     </div>
-    <div class="container">
+    <div class="container photo-wrapper">
         <div class="row">
-            <div class="col-6 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2 p-0">
                 <div class="instagram-section-image-wrapper">
                     <img src="images/instagram1.png" class="img-fluid instagram-section-photo"/>
                     <div class="instagram-section-darkening">fds</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2 p-0">
                 <div class="instagram-section-image-wrapper">
                     <img src="images/instagram1.png" class="img-fluid instagram-section-photo"/>
                     <div class="instagram-section-darkening">fds</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2 p-0">
                 <div class="instagram-section-image-wrapper">
                     <img src="images/instagram1.png" class="img-fluid instagram-section-photo"/>
                     <div class="instagram-section-darkening">fds</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2 p-0">
                 <div class="instagram-section-image-wrapper">
                     <img src="images/instagram1.png" class="img-fluid instagram-section-photo"/>
                     <div class="instagram-section-darkening">fds</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2 p-0">
                 <div class="instagram-section-image-wrapper">
                     <img src="images/instagram1.png" class="img-fluid instagram-section-photo"/>
                     <div class="instagram-section-darkening">fds</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2 p-0">
                 <div class="instagram-section-image-wrapper">
                     <img src="images/instagram1.png" class="img-fluid instagram-section-photo"/>
                     <div class="instagram-section-darkening">fds</div>
@@ -255,33 +255,54 @@ Vaši poptávku.</span>
 <section class="contact-section">
     <div class="contact-info">
         <h3 class="mb-5">KONTAKTUJTE NÁS</h3>
-        <img src="images/location.svg" />
+        <img src="images/location.svg" class="pb-3"/>
         <p>OPTIMUM PRAGUE, s.r.o.<br>
             Praha 8 – Karlín<br>
             Thámova 18a<br>
             186 00<br>
             Česká Republika</p>
-        <p>IČO: 28406029<br>
+        <p class="pb-5">IČO: 28406029<br>
             DIČ: CZ28406029</p>
-        <img src="images/sms2.svg" />
+        <img src="images/sms2.svg" class="pb-3" />
         <p>
            info@optimumcarsprague.com
         </p>
-        <p><a href="#">NÁŠ TÝM</a></p>
+        <div class="contact-section-box">
+        <p>Spojte se přímo s někým z našeho týmu! </p>
+        <a href="#"><button class="contact-section-link-button">NÁŠ TÝM</button></a>
+        </div>
     </div>
-    <form>
+    <form class="contact-form-wrapper">
     <div class="contact-form">
+
 
 
             <input type="text" placeholder="Vaše jméno" required>
             <input type="email" placeholder="E-mail" required>
-            <input type="tel" placeholder="+420  Telefon" required>
+        <div class="number-wrapper">
+            <select id="prefix" name="prefix" class="number-select">
+                <option value="en">420</option>
+                <option value="cs">421</option>
+                <option value="de">422</option>
+
+            </select>
+            <input type="tel" placeholder="+Telefon" required class="number-input">
+
+        </div>
             <textarea placeholder="Vaše zpráva" rows="4" required></textarea>
             <button type="submit">ODESLAT ZPRÁVU</button>
 
+
     </div>
+        <div class="contact-section-box">
+            <p>Máte zájem o spolupráci? Napište nám! </p>
+            <a href="#"><button class="contact-section-link-button">CHCI SPOLUPRACOVAT</button></a>
+        </div>
     </form>
 </section>
+<div class="divider-wrapper">
+<div class="divider"></div>
+</div>
 
 <section class="footer">
     <div class="container">

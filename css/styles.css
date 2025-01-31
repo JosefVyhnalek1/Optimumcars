@@ -442,6 +442,7 @@ a {
 
 .instagram-section{
     margin: 100px 0;
+
 }
 
 .instagram-section-image-wrapper {
@@ -472,7 +473,6 @@ a {
 }
 
 .instagram-section-text{
-    font-family: Halvar Breitschrift;
     font-size: 32px;
     font-style: italic;
     font-weight: 700;
@@ -493,6 +493,15 @@ a {
     display: flex;
     gap: 20px;
 }
+
+.photo-wrapper{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+}
+
 
 .youtube-video {
     height: 200px;
@@ -530,9 +539,110 @@ a {
 
 .contact-form{
     background-color: #FFF;
-    padding: 70px;
     display: flex;
     flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.contact-form input{
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 40px;
+}
+
+.contact-form textarea{
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.contact-form button {
+    border: none;
+    background: black;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    width: fit-content;
+    padding: 15px 25px;
+}
+
+.contact-section-link-button {
+    color: #FFF;
+    padding: 10px 0px;
+    background: #000;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.contact-section-box {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.contact-form-wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+}
+
+.contact-info{
+    width: 50%;
+}
+
+@media (max-width: 990px) {
+    .contact-section{
+        flex-direction: column;
+        gap: 70px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .contact-info{
+        width: 100%;
+    }
+
+    .contact-form-wrapper{
+        width: 100%;
+        align-self: center;
+    }
+
+    .divider{
+        margin: 0px 30px !important;
+    }
+
+    .contact-section-box{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.divider{
+    height: 1px;
+    background: #383A42;
+    margin: 0px 70px;
+}
+
+.divider-wrapper{
+    background: #000;
+}
+
+.number-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.number-select{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.number-input{
+    width: 100%;
+    padding-left: 20px;
 }
 
 .footer{
@@ -624,3 +734,5 @@ a {
         flex-direction: column;
     }
 }
+
+/*TODO mobile margin 20px?
