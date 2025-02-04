@@ -532,6 +532,8 @@ a {
 
 .showroom-section-img {
     max-width: 100%;
+    object-fit: contain;
+    height: fit-content;
 }
 
 .showroom-section-text {
