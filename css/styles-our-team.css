@@ -56,3 +56,99 @@
         align-self: center;
     }
 }
+
+.text-name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    align-self: start;
+}
+
+.text-desc{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    align-self: start;
+}
+
+.text-email{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 12px;
+    color: #8F94A1;
+    text-decoration: underline;
+    align-self: start;
+}
+
+.text-email2{
+    color: #000 !important;
+}
+
+.text-tel2{
+    color: #000 !important;
+}
+
+.text-tel{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 40px;
+    align-self: start;
+    color: #8F94A1;
+}
+
+.person{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper{
+    position: relative;
+    width: 397px;
+    height: 500px;
+    max-width: 100%;
+}
+
+.image-wrapper img{
+    max-width: 100%;
+}
+
+.image-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 20%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+    cursor: pointer;
+    font-size: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: end;
+}
+
+.our-team-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text-wrapper{
+    width: 397px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.empty-image{
+    background: #E5E5E5;
+}
