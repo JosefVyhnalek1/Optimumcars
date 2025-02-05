@@ -37,3 +37,22 @@
     text-decoration: underline;
     font-weight: 700;
 }
+
+@media (max-width: 990px) {
+    .email-section h2{
+        font-size: 18px;
+    }
+
+    .email-section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contact-section{
+        gap: 50px;
+    }
+
+    .offer-section-button {
+        align-self: center;
+    }
+}
