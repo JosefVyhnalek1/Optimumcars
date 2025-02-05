@@ -1,0 +1,39 @@
+.email-section{
+    background-color: #000;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.email-section h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+
+.divider2{
+    height: 1px;
+    background: #383A42;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-section{
+    gap: 100px;
+}
+
+.offer-section-box1{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.offer-section-button{
+    align-self: start;
+}
+
+.underline-text{
+    text-decoration: underline;
+    font-weight: 700;
+}

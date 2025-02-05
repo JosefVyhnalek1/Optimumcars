@@ -728,7 +728,7 @@ a {
 .contact-section-box {
     display: flex;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 14px;
     white-space: nowrap;
 }
@@ -912,5 +912,7 @@ a {
         flex-direction: column;
     }
 }
+
+
 
 /*TODO mobile margin 20px?
