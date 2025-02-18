@@ -255,9 +255,11 @@ select option {
     margin: 10px;
 
     color: #FFF;
+    transition: font-weight 0.3s ease;
 
     &:hover {
         color: #FFF;
+        font-weight: 700;
     }
 
     text-transform: uppercase;
@@ -286,6 +288,8 @@ select option {
 
     margin-left: 24px;
     margin-right: 24px;
+
+
 }
 
 span {
@@ -304,6 +308,12 @@ input {
 button {
     font-family: Halvar Breitschrift;
     text-transform: uppercase;
+
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 a {
