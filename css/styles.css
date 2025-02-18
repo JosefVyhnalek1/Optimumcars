@@ -622,17 +622,6 @@ a {
     padding: 70px 0;
     display: flex;
     justify-content: space-around;
-    position: relative;
-}
-
-.prev-button{
-    position: absolute;
-    left: 0;
-}
-
-.next-button{
-    position: absolute;
-    right: 0;
 }
 
 @media (max-width: 990px) {
@@ -980,9 +969,10 @@ a {
 }
 
 
-.owl-carousel{
-    margin-left: 70px;
-    margin-right: 70px;
+.temp{
+    background-color: #4d7dd8;
 }
+
+
 
 /*TODO mobile margin 20px?
