@@ -979,6 +979,23 @@ a {
     width: calc(100% - 160px);
 }
 
+.owl-carousel img{
+    height: 64px;
+}
+
+.arrow-button {
+    background: transparent;
+    border: none;
+    height: fit-content;
+    align-self: center;
+
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 
 
 /*TODO mobile margin 20px?

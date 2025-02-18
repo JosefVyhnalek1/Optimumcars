@@ -164,19 +164,21 @@
 
 
 <section class="brand-section">
-    <img src="images/Arrow2.svg"  alt="arrow"/>
+    <button id="customPrev" class="arrow-button"><img src="images/Arrow2.svg"  alt="arrow"/></button>
     <div class="wrap">
         <div class="owl-carousel owl-theme ">
-            <div  class="temp"> Your Content 1 </div>
-            <div class="temp"> Your Content  2</div>
-            <div class="temp"> Your Content  3</div>
-            <div class="temp"> Your Content 4</div>
-            <div class="temp"> Your Content 5</div>
-            <div class="temp"> Your Content 6</div>
-            <div class="temp"> Your Content 7</div>
+            <img src="images/Mercedes.svg" alt="Mercedes logo" />
+            <img src="images/Lambo.svg" alt="Lamborghini logo" />
+            <img src="images/RR.svg" alt="RR logo" class="hide-on-mobile"/>
+            <img src="images/Porsche.svg" alt="Porsche logo" class="hide-on-mobile"/>
+            <img src="images/BMW.svg" alt="BMW logo" class="hide-on-mobile"/>
+            <img src="images/Land%20Rover.svg" alt="Land Rover logo" class="hide-on-mobile"/>
+            <img src="images/Ferrari.svg" alt="Ferrari logo" class="hide-on-mobile"/>
+            <img src="images/Audi.svg" alt="Audi logo" class="hide-on-mobile"/>
+
         </div>
     </div>
-    <img src="images/Arrow1.svg" alt="arrow" />
+    <button id="customNext" class="arrow-button"><img src="images/Arrow1.svg"  alt="arrow" /></button>
 
 
 
@@ -391,9 +393,9 @@
 <script>
     $(document).ready(function() {
 
-        var itemsToShow = 3; // Počet viditelných položek
-        var containerWidth = $(".owl-carousel").width(); // Šířka carouselu
-        var itemWidth = containerWidth / itemsToShow; // Výpočet šířky položek
+        var itemsToShow = 7;
+        var containerWidth = $(".owl-carousel").width();
+        var itemWidth = containerWidth / itemsToShow;
 
         // Nastavíme šířku každé položky ručně
         $(".owl-carousel .item").css("width", itemWidth + "px");
@@ -401,6 +403,7 @@
         const owl =    $(".owl-carousel").owlCarousel({
 
             loop: true,
+            items: 7,
 
             autoplay: true,
             autoplayTimeout: 3000,
