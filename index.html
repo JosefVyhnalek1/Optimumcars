@@ -169,12 +169,12 @@
         <div class="owl-carousel owl-theme ">
             <img src="images/Mercedes.svg" alt="Mercedes logo" />
             <img src="images/Lambo.svg" alt="Lamborghini logo" />
-            <img src="images/RR.svg" alt="RR logo" class="hide-on-mobile"/>
-            <img src="images/Porsche.svg" alt="Porsche logo" class="hide-on-mobile"/>
-            <img src="images/BMW.svg" alt="BMW logo" class="hide-on-mobile"/>
-            <img src="images/Land%20Rover.svg" alt="Land Rover logo" class="hide-on-mobile"/>
-            <img src="images/Ferrari.svg" alt="Ferrari logo" class="hide-on-mobile"/>
-            <img src="images/Audi.svg" alt="Audi logo" class="hide-on-mobile"/>
+            <img src="images/RR.svg" alt="RR logo" />
+            <img src="images/Porsche.svg" alt="Porsche logo" />
+            <img src="images/BMW.svg" alt="BMW logo" />
+            <img src="images/Land%20Rover.svg" alt="Land Rover logo" />
+            <img src="images/Ferrari.svg" alt="Ferrari logo" />
+            <img src="images/Audi.svg" alt="Audi logo" />
 
         </div>
     </div>
@@ -393,18 +393,25 @@
 <script>
     $(document).ready(function() {
 
-        var itemsToShow = 7;
-        var containerWidth = $(".owl-carousel").width();
-        var itemWidth = containerWidth / itemsToShow;
+        const screenWidth = $(window).width();
+        let itemsToShow;
 
-        // Nastavíme šířku každé položky ručně
+        if (screenWidth < 768) {
+            itemsToShow = 3;
+        } else if (screenWidth < 1024) {
+            itemsToShow = 5;
+        } else {
+            itemsToShow = 7;
+        }
+
+        const containerWidth = $(".owl-carousel").width();
+        const itemWidth = containerWidth / itemsToShow;
+
         $(".owl-carousel .item").css("width", itemWidth + "px");
 
         const owl =    $(".owl-carousel").owlCarousel({
-
             loop: true,
-            items: 7,
-
+            items: itemsToShow,
             autoplay: true,
             autoplayTimeout: 3000,
             slideBy: 1,
