@@ -393,39 +393,34 @@
 <script>
     $(document).ready(function() {
 
-        const screenWidth = $(window).width();
-        let itemsToShow;
 
-        if (screenWidth < 768) {
-            itemsToShow = 3;
-        } else if (screenWidth < 1024) {
-            itemsToShow = 5;
-        } else {
-            itemsToShow = 7;
-        }
 
-        const containerWidth = $(".owl-carousel").width();
-        const itemWidth = containerWidth / itemsToShow;
-
-        $(".owl-carousel .item").css("width", itemWidth + "px");
 
         const owl =    $(".owl-carousel").owlCarousel({
             loop: true,
-            items: itemsToShow,
             autoplay: true,
             autoplayTimeout: 3000,
             slideBy: 1,
             dots: false,
-            autoWidth: false,
 
+            responsive: {
+                0: {
+                    items: 3
+                },
+                800: {
+                    items: 5
+                },
+                1000: {
+                    items: 7
+                }
+            }
         });
 
         $('#customPrev').click(function() {
             owl.trigger('prev.owl.carousel');
         });
 
-        // Při kliknutí na vlastní tlačítko "Další"
-        $('#customNext').click(function() {
+         $('#customNext').click(function() {
             owl.trigger('next.owl.carousel');
         });
 
