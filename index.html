@@ -31,7 +31,7 @@
     </div>
 </div>
 <div class="hero-section text-center">
-    <div class="container mx-auto">
+    <div class="container mx-auto hero-section-inner">
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container container-custom">
             <div class="navbar-brand">
@@ -59,7 +59,7 @@
         </div>
     </nav>
     <div class="container hero-section-text-box">
-        <h1 >LUXUSNÍ SPORTOVNÍ VOZIDLA</h1>
+        <h1 class="hero-title">LUXUSNÍ SPORTOVNÍ VOZIDLA</h1>
         <div class="stats">
             <div class="hero-text-box"><div><span class="hero-text-1" id="counter1"></span><span class="hero-text-1">+</span></div><span class="hero-text-2">SOLD CARS<br/>
                   IN 2024</span>
@@ -440,7 +440,12 @@
         console.error(counter1.error);
     }
 
-    const counter2 = new CountUp('counter2', 0, 20);
+    const options = {
+        useEasing: false,
+        useGrouping: false,
+    };
+
+    const counter2 = new CountUp('counter2', 0, 20,  0, 2, options);
     if (!counter2.error) {
         counter2.start();
     } else {
