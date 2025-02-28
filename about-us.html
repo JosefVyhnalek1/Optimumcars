@@ -22,10 +22,7 @@
         </div>
     </div>
 </div>
-<section class="hero-section-about-us">
-    <div class="container mx-auto">
-
-    <nav class="navbar navbar-expand-lg navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-custom background-black">
     <div class="container container-custom">
         <div class="navbar-brand">
             <a href="index.html" class="pointer">
@@ -59,8 +56,11 @@
     </div>
 
 </nav>
+<section class="hero-section-about-us">
+    <div class="container mx-auto">
+
     </div>
-    <h2>ABOUT US</h2>
+    <h2 class="title-about-us">ABOUT US</h2>
 </section>
 <section class="about-section container mx-auto">
     <div class="about-section-box">
@@ -270,5 +270,20 @@
     </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const navbar = document.querySelector(".navbar-custom");
+    const topOffset = 42;
+
+    window.addEventListener("scroll", () => {
+        let scrollPos = window.scrollY;
+
+        if (scrollPos > topOffset) {
+            navbar.classList.add("fixed");
+        } else {
+            navbar.classList.remove("fixed");
+        }
+
+    });
+</script>
 </body>
 </html>

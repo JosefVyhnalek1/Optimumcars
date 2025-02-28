@@ -274,24 +274,24 @@ select option {
 
 
 .navbar-custom {
-    padding: 30px 20px 0;
+    padding: 20px 20px;
     text-align: center;
     width: 100%;
     justify-content: center;
     position: absolute;
     z-index: 50;
+    top: 42px;
 }
 
 .navbar-custom.fixed{
     top: 0;
     left: 0;
     position: fixed;
-    padding: 20px 20px;
     border-bottom: 1px solid grey;
 }
 
 .container-custom {
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
 }
 
@@ -440,7 +440,7 @@ a {
     }
 
     .navbar {
-        padding: 20px 20px 0;
+        padding: 20px 20px;
     }
 
     .navbar-collapse {
@@ -1080,5 +1080,12 @@ a {
     }
 }
 
+.background-black{
+    background-color: #000;
+}
+
+.title-about-us{
+    padding-top: 60px;
+}
 
 /*TODO mobile margin 20px?
