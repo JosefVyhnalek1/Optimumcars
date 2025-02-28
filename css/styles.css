@@ -703,7 +703,6 @@ a {
 .photo-wrapper {
     margin: 0;
     width: 100%;
-    max-width: 1440px;
     display: flex;
 }
 
@@ -1028,7 +1027,7 @@ a {
 
 .hover-white-button{
 
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
     &:hover {
         color: #FFF !important;
         background-color: #000;
@@ -1039,10 +1038,30 @@ a {
     }
 }
 
+.hover-black-button{
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+    &:hover {
+        color: #000 !important;
+        background-color: #FFF;
+        border: 1px solid black;
+        * {
+            color: #000 !important;
+        }
+    }
+}
+
 .bold{
     font-weight: 700;
 }
 
+.social-footer{
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
 
 
 /*TODO mobile margin 20px?
