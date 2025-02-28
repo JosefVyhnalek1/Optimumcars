@@ -469,8 +469,11 @@ a {
 
 .about-section-button1 {
     background-color: #FFF;
-    padding: 10px 15px;
+    padding: 16px 24px;
     text-transform: uppercase;
+}
+
+.about-section-button1-2{
     margin-right: 15px;
 }
 
@@ -1004,6 +1007,40 @@ a {
     &:hover {
         opacity: 1;
     }
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.hover-white-button{
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover {
+        color: #FFF !important;
+        background-color: #000;
+
+        * {
+            color: #FFF !important;
+        }
+    }
+}
+
+.hover-white-button{
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover {
+        color: #FFF !important;
+        background-color: #000;
+
+        * {
+            color: #FFF !important;
+        }
+    }
+}
+
+.bold{
+    font-weight: 700;
 }
 
 
