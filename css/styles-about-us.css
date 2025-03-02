@@ -243,3 +243,29 @@
         width: 100%;
     }
     }
+
+
+.bank-accounts{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.bank-accounts > *{
+    width: 50%;
+    @media (max-width: 768px) {
+        width: 100%;
+
+    }
+}
+
+.bank-account-title{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}

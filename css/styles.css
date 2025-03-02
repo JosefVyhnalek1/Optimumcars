@@ -110,6 +110,10 @@
     font-style: italic;
 }
 
+html{
+    scroll-padding-top: 82px;
+}
+
 
 .language-select{
     outline: none !important;
@@ -281,6 +285,7 @@ select option {
     position: absolute;
     z-index: 50;
     top: 42px;
+    min-height: 89px;
 }
 
 .navbar-custom.fixed{
@@ -1048,6 +1053,7 @@ a {
     &:hover {
         color: #FFF !important;
         background-color: #000;
+        border: 1px solid white;
 
         * {
             color: #FFF !important;
@@ -1113,5 +1119,22 @@ a {
     color: #000;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
 
-/*TODO mobile margin 20px?
+
+.link-hover{
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.hover-outlined-white-button{
+    &:hover{
+        padding: 15px 0;
+        margin: 0;
+    }
+}
