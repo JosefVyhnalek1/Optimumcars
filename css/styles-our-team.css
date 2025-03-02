@@ -188,3 +188,27 @@
     font-size: 14px;
     align-self: start;
 }
+
+.name-and-surname{
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 990px) {
+        flex-direction: column;
+    }
+}
+
+.reason-select{
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    padding-left: 0;
+
+
+
+
+        &:focus{
+        box-shadow: none !important;
+        border-color: #000;
+    }
+}

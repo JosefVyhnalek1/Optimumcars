@@ -241,7 +241,16 @@ Pokud nám chcete nabídnout vozidlo k prodeji, nebo máte zájem o některé z 
         <div class="contact-form-wrapper">
             <form >
                 <div class="contact-form">
-                    <input type="text" placeholder="Vaše jméno" required>
+                    <div class="name-and-surname">
+                    <input type="text" placeholder="Jméno" required>
+                    <input type="text" placeholder="Příjmení" required>
+                    </div>
+                    <select id="kontakt" name="kontakt" class="form-select reason-select">
+                        <option value="" disabled selected hidden>Proč nás kontaktujete?</option>
+                        <option value="koupi">Chci Vám nabídnout vozidlo ke koupi</option>
+                        <option value="poptat">Chci u Vás poptat vozidlo</option>
+                        <option value="kontakt">Chci se s Vámi spojit kvůli něčemu jinému</option>
+                    </select>
                     <input type="email" placeholder="E-mail" required>
                     <div class="number-wrapper">
                         <input id="phone" type="tel">
