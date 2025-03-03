@@ -1167,3 +1167,19 @@ a {
         font-weight: 900;
     }
 }
+
+.mobile-auto-margin{
+    @media (max-width: 768px) {
+        margin: auto;
+    }
+}
+
+.temp-mobile{
+    @media (max-width: 768px) {
+        margin-top: 40px;
+
+        &:hover{
+            margin-top: 20px;
+        }
+    }
+}
