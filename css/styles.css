@@ -1161,3 +1161,9 @@ a {
         transform: none !important;
     }
 }
+
+.bold-hover{
+    &:hover{
+        font-weight: 900;
+    }
+}
