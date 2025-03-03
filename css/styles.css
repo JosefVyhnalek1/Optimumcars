@@ -503,6 +503,7 @@ a {
 
 .about-section-button1-2{
     margin-right: 15px;
+    border: 1px solid #000;
 
     &:hover {
         transform: none !important;
@@ -1150,7 +1151,7 @@ a {
 
 .hover-outlined-white-button{
     &:hover{
-        padding: 15px 0;
+        padding: 15px 21px;
         margin: 0;
     }
 }
