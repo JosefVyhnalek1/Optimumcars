@@ -339,6 +339,12 @@ select option {
     margin-left: 24px;
     margin-right: 24px;
 
+    &:hover {
+        transform: none !important;
+    }
+
+    border: 1px solid #FFF;
+
 
 }
 
@@ -497,6 +503,11 @@ a {
 
 .about-section-button1-2{
     margin-right: 15px;
+
+    &:hover {
+        transform: none !important;
+        border: 1px solid #FFF;
+    }
 }
 
 .about-section-button2 {
@@ -568,6 +579,11 @@ a {
     font-weight: 500;
     line-height: 12px;
     align-self: center;
+
+    &:hover {
+        transform: none !important;
+        border: none !important;
+    }
 }
 
 .showroom-section {
@@ -1136,5 +1152,12 @@ a {
     &:hover{
         padding: 15px 0;
         margin: 0;
+    }
+}
+
+.send-message-button{
+    border: 1px solid #000 !important;
+    &:hover{
+        transform: none !important;
     }
 }

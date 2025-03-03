@@ -137,7 +137,7 @@
     }
 
     .hero-section-about-us h2{
-        margin: 40px auto;
+        margin: 80px auto;
 
     }
 
@@ -227,7 +227,12 @@
 }
 
 .about-section-button1{
+    border: 2px solid #000 !important;
     margin-top: 40px;
+    &:hover{
+        transform: none !important;
+        border: 2px solid #000 !important;
+    }
 }
 
 .owner-words{
@@ -269,3 +274,5 @@
     margin-bottom: 20px;
     padding-top: 20px;
 }
+
+
