@@ -366,6 +366,8 @@ button {
     text-transform: uppercase;
 
     transition: transform 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
 
     &:hover {
         transform: scale(1.05);
@@ -502,6 +504,12 @@ a {
 }
 
 .about-section-button1-2{
+
+    @media (max-width: 768px) {
+        margin-right: 0 !important;
+        margin-left: 2px !important;
+    }
+
     margin-right: 15px;
     border: 1px solid #000;
 
@@ -1182,5 +1190,11 @@ a {
         &:hover{
             margin-top: 20px;
         }
+    }
+}
+
+.about-section-button2-2{
+    &:hover{
+        border: 1px solid #000 !important;
     }
 }
