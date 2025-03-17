@@ -426,6 +426,13 @@ a {
     text-decoration-skip-ink: none;
 }
 
+@media(max-width: 990px){
+    .navbar-toggler {
+        background: white;
+        border: none;
+    }
+}
+
 @media (max-width: 768px) {
     .top-bar {
         padding: 3px 10px;
@@ -446,12 +453,6 @@ a {
         font-size: 48px;
     }
 
-    .navbar-toggler {
-        border: 2px solid black;
-        background: white;
-        opacity: 0.5;
-    }
-
     .navbar {
         padding: 20px 20px;
     }
@@ -470,6 +471,10 @@ a {
     .hero-section-text-box {
         padding: 20px;
         margin: 0;
+    }
+
+    .hide-on-mobile{
+        display: none;
     }
 
 }
@@ -1197,4 +1202,10 @@ a {
     &:hover{
         border: 1px solid #000 !important;
     }
+}
+
+.contact-us-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
