@@ -244,17 +244,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4 video-wrapper">
-                <iframe class="youtube-video"  src="https://www.youtube.com/embed/MtYvAgiB6Y4"
+                <iframe class="youtube-video"
                         allowfullscreen>
                 </iframe>
             </div>
             <div class="col-12 col-lg-4 video-wrapper hide-on-mobile">
-                <iframe  class="youtube-video" src="https://www.youtube.com/embed/MtYvAgiB6Y4"
+                <iframe  class="youtube-video"
                          allowfullscreen>
                 </iframe>
             </div>
             <div class="col-12 col-lg-4 video-wrapper hide-on-mobile">
-                <iframe class="youtube-video"  src="https://www.youtube.com/embed/MtYvAgiB6Y4"
+                <iframe class="youtube-video"
                         allowfullscreen>
                 </iframe>
             </div>
@@ -498,6 +498,26 @@
 
     input.addEventListener("keydown", (e) => e.preventDefault());
     input.addEventListener("input", (e) => input.value = "");
+</script>
+<script>
+    const API_KEY = "";
+    const CHANNEL_ID = "UC_x5XG1OV2P6uZZ5FSM9Ttw";
+    const MAX_RESULTS = 3;
+
+    const url = `https://www.googleapis.com/youtube/v3/search?channelId=${CHANNEL_ID}&order=date&type=video&maxResults=${MAX_RESULTS}&key=${API_KEY}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const videoElements = document.querySelectorAll(".youtube-video");
+            data.items.forEach((video, index) => {
+                if (videoElements[index]) {
+                    videoElements[index].src = `https://www.youtube.com/embed/${video.id.videoId}`;
+                }
+            });
+        })
+        .catch(error => console.error("Error while fetching youtube video links", error));
+
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
